@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator assignment</title>
+
+<style type="text/css">
+
+/*
+input.button {
+    background-color: white;
+    border: none;
+    color: green;
+    padding: 10px;
+    text-align: justify;
+    font-size: 20px;
+}
+*/
+
+body {
+    background-image: url("images/tile.jpeg");
+    background-repeat: repeat;
+    border: none;
+}
+
+.heading {
+    font-size: 200%;
+    color: white;
+    background-color: darkblue;
+    text-align: center;
+    
+}
+
+form {
+	text-align: center;
+}
+
+table {
+    width: 40%;
+    padding: 40px;
+
+}
+
+
+
+
+</style>
+
+
+</head>
+
+<body>
+
+<div class="heading"><br><br>Calculator Assignment<br><br><br></div>
+
+<br><br><br><br>
+
+
+<form NAME="Calc">
+<TABLE border="1" cellspacing="10" cellpadding="0" bgcolor="#6699FF" align="center">
+
+<!--  colspan="4" -->
+<!-- <TR>
+<TD><INPUT TYPE="text" NAME="Input" Size="22"></TD>
+</TR>
+-->
+
+<TR>
+<TD colspan="100%"><INPUT TYPE="text" NAME="Input" Size="62"></TD>
+</TR>
+
+<TR>
+<TD><INPUT TYPE="button"  NAME="seven"   VALUE="  7  " OnClick="Calc.Input.value += '7'"></TD>
+<TD><INPUT TYPE="button"  NAME="eight"   VALUE="  8  " OnClick="Calc.Input.value += '8'"></TD>
+<TD><INPUT TYPE="button"  NAME="nine"    VALUE="  9  " OnCLick="Calc.Input.value += '9'"></TD>
+
+<TD><INPUT TYPE="button"  NAME="plus"  VALUE="  +  " OnClick="Calc.Input.value += ' + '"></TD>
+</TR>
+
+
+<TR>
+<TD><INPUT TYPE="button"  NAME="four"   VALUE="  4  " OnClick="Calc.Input.value += '4'"></TD>
+<TD><INPUT TYPE="button"  NAME="five"   VALUE="  5  " OnClick="Calc.Input.value += '5'"></TD> 
+<TD><INPUT TYPE="button"  NAME="six"    VALUE="  6  " OnCLick="Calc.Input.value += '6'"></TD>
+
+<TD><INPUT TYPE="button" NAME="multiply" VALUE="  *  " OnClick="Calc.Input.value += ' * '"></TD>
+</TR>
+
+
+<TR>
+<TD><INPUT TYPE="button"  NAME="one"   VALUE="  1  " OnClick="Calc.Input.value += '1'"></TD>
+<TD><INPUT TYPE="button"  NAME="two"   VALUE="  2  " OnClick="Calc.Input.value += '2'"></TD>
+<TD><INPUT TYPE="button"  NAME="three" VALUE="  3  " OnCLick="Calc.Input.value += '3'"></TD>
+
+<TD><INPUT TYPE="button"  NAME="div"   VALUE="  /  " OnClick="Calc.Input.value += ' / '"></TD>
+</TR>
+
+<TR>
+<TD><INPUT TYPE="button"  NAME="clear"  VALUE="  C  " OnCLick="Calc.Input.value ='' "></TD>
+<TD><INPUT TYPE="button"  NAME="zero"   VALUE="  0  " OnCLick="Calc.Input.value += '0'"></TD>
+<TD><INPUT TYPE="button"  NAME="equal"  VALUE="  =  " OnClick="Calc.Input.value = eval(Calc.Input.value)"></TD>
+
+<TD><INPUT TYPE="button" NAME="minus" VALUE="  -  " OnClick="Calc.Input.value += ' - '"></TD>
+</TR>
+
+
+</TABLE>
+</form>
+</div>
+
+</body>
+
+</html>
